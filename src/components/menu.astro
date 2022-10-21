@@ -1,35 +1,52 @@
-<div class="header_content">
+<script is:inline>
+     $(document).ready(function(){
+        $("#productosNav").click(function(){
+            $("#principalContent").toggle();
+        });
+     });
     
-    <img loading="lazy" class="logoNav" src="/src/assets/images/logo.png" alt="Logo Protein Club">
+
+
+    
+</script>
+
+<div class="header_content">
+    <img
+        loading="lazy"
+        class="logoNav"
+        src="/src/assets/images/logo.png"
+        alt="Logo Protein Club"
+    />
 
     <nav>
         <ul>
-            <li id="productosNav"><a href="">Productos</a></li>
-            <li id="recetasNav"><a href="">Recetas</a></li>
-            <li id="deportivosNav"><a href="">Deportivos</a></li>
-            <li id="nosotrosNav"><a href="">Nosotros</a></li>
+            <li id="productosNav"><a href="#">Productos</a></li>
+            <li id="recetasNav"><a href="#">Recetas</a></li>
+            <li id="deportivosNav"><a href="#">Deportivos</a></li>
+            <li id="nosotrosNav"><a href="#">Nosotros</a></li>
         </ul>
     </nav>
 </div>
 
+
 <style>
-    .logoNav{
+    .logoNav {
         position: absolute;
         top: 10px;
         left: 100px;
-        width: 103px;
-        height: 90px;
+        width: 93px;
+        height: 80px;
         /* transform: translate(-50%, -50%); */
     }
-    .header_content{
-        position: fixed;
+    .header_content {
+        position: absolute;
         width: 100%;
-        height: 110px;
-        background-color: #E0E0E0;
+        height: 100px;
+        background-color: #e0e0e0;
     }
     nav {
         position: absolute;
-        top: 50px;
+        top: 40px;
         right: 100px;
     }
     ul {

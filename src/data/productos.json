@@ -1,17 +1,38 @@
 [
     {
-        "name": "primerproducto"
+        "nombre": "primerproducto",
+        "caracteristicas" : "<p>Aporta proteína de alta calidad, principalmente del aislado de proteína de soya\n90 Calorías por porción preparado con agua y 170 Calorías preparado en leche descremada<br>Vitaminas y minerales<br>Buena fuente de fibra<br>Libre de colesterol y grasas trans (preparado con agua)<br>Alimento que ayuda a nutrir tu cuerpo.</p>",
+        "descripcion" : "Complementa tu nutrición con el Batido Nutricional Fórmula 1 sabor a Cookies & Cream de Herbalife Nutrition, ideal para obtener nutrientes esenciales de una manera práctica, rápida y sencilla.",
+        "imagen" : "src/assets/images/logo.png",
+        "precio" : "Aqui va precio"
+
     },
     {
-        "name": "segundoproducot"
+        "nombre": "primerproducto",
+        "caracteristicas" : "Esto son caracteristicas",
+        "descripcion" : "Este producto es bueno para la salud",
+        "imagen" : "src/assets/images/logo.png",
+        "precio" : "Aqui va precio"
     },
     {
-        "name": "tercerproducto"
+        "nombre": "primerproducto",
+        "caracteristicas" : "Esto son caracteristicas",
+        "descripcion" : "Este producto es bueno para la salud",
+        "imagen" : "src/assets/images/logo.png",
+        "precio" : "Aqui va precio"
     },
     {
-        "name":"cuartoproducto"
+        "nombre": "primerproducto",
+        "caracteristicas" : "Esto son caracteristicas",
+        "descripcion" : "Este producto es bueno para la salud",
+        "imagen" : "src/assets/images/logo.png",
+        "precio" : "Aqui va precio"
     },
     {
-        "name": "quintoproducto"
+        "nombre": "primerproducto",
+        "caracteristicas" : "Esto son caracteristicas",
+        "descripcion" : "Este producto es bueno para la salud",
+        "imagen" : "src/assets/images/logo.png",
+        "precio" : "Aqui va precio"
     }
 ]

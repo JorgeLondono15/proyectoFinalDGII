@@ -1,8 +1,10 @@
 ---
 export interface Props {
-	title: string;
+	title: string;      
 }
-import Menu from "../components/menu.astro";
+import Menu from "../components/menu.astro";    
+import Footer from "../components/footer.astro";
+
 const { title } = Astro.props;
 ---
 
@@ -11,14 +13,19 @@ const { title } = Astro.props;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<link rel="icon" type="image/x-icon" href="src/assets/images/logo.png">	
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
 	<body>
 		<Menu />
 		<slot />
+		
 	</body>
+	<footer>
+		<Footer /> 
+	</footer>
 </html>
 <style is:global>
 	:root {
@@ -28,6 +35,7 @@ const { title } = Astro.props;
 	body {
 		margin: 0px;
 		padding: 0px;
+		background-color: #F2F2F4;
 	}
 	code {
 		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
