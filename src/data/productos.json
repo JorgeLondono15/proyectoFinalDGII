@@ -1,6 +1,6 @@
 [
     {
-        "nombre": "primerproducto",
+        "nombre": "BN Cookies",
         "caracteristicas" : "Aporta proteína de alta calidad, principalmente del aislado de proteína de soya\n90 Calorías por porción preparado con agua y 170 Calorías preparado en leche descremada \nVitaminas y minerales\n Buena fuente de fibra Libre de colesterol y grasas trans (preparado con agua) Alimento que ayuda a nutrir tu cuerpo.",
         "descripcion" : "Complementa tu nutrición con el Batido Nutricional Fórmula 1 sabor a Cookies & Cream de Herbalife Nutrition, ideal para obtener nutrientes esenciales de una manera práctica, rápida y sencilla.",
         "imagen" : "src/assets/images/F1-Cookies-and-Cream.png",
@@ -8,21 +8,21 @@
 
     },
     {
-        "nombre": "segundoproducto",
+        "nombre": "NRG Guaraná",
         "caracteristicas" : "Puede apoyar la sensación de energía durante día con la ayuda del extracto de las semillas de guaraná, que contiene guaranina, compuesto que actúa como estimulante del organismo.",
         "descripcion" : "N-R-G es una mezcla en polvo para preparar una bebida energizante con té negro (naranja pekoe)\n y extractos de semillas de guaraná, fuentes de cafeína natural.Conoce más del producto: \nUtilizar la pieza aprobada por el INVIMA sin realizar ninguna modificación al diseño o contenido.",
         "imagen" : "src/assets/images/NRG-Tropical-CO.png",
         "precio" : "Aqui va precio"
     },
     {
-        "nombre": "tercerproducto",
+        "nombre": "Crocante proteína",
         "caracteristicas" : "Buena fuente de proteína \nNaturalmente libre de grasa \n Sin azúcares",
         "descripcion" : "Crocante de Proteína \nTrocitos crocantes de proteína aislada de soya con cacao. \nEs un alimento a base de proteína aislada de soya con cacao, delicioso y crujiente,con sabor a chocolate.",
         "imagen" : "src/assets/images/ProteinCrunch.png",
         "precio" : "Aqui va precio"
     },
     {
-        "nombre": "cuartoproducto",
+        "nombre": "BN café latte",
         "caracteristicas" : "Aporta proteína de alta calidad, principalmente del aislado de proteína de soya \n90 Calorías por porción preparado con agua y 170 Calorías preparado en leche descremada \nVitaminas y minerales \nBuena fuente de fibra \nLibre de colesterol y grasas trans (preparado con agua) \nAlimento que ayuda a nutrir tu cuerpo.",
         "descripcion" : "Complementa tu nutrición con el Batido Nutricional Fórmula 1 sabor a Café Latte de Herbalife Nutrition,\n ideal para obtener nutrientes esenciales de una manera práctica, rápida y sencilla.",
         "imagen" : "src/assets/images/F1Cafe-Latte.png",

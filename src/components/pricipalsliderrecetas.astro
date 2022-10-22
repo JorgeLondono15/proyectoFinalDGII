@@ -1,3 +1,31 @@
-<div id="sliderPrincipalrecetas">
+---
+
+import Recetas from "../pages/recetas.astro";
+
+---
+
+ <div id="sliderPrincipalrecetas">
     <h1>Recetas</h1>
+    <!--{
+		Recetas.map((item) => (
+			<div>
+				<h2>{item.nombre}</h2>
+				<p>{item.porciones}</p>
+                <p>{item.tiempodepreparacion}</p>
+                <p>{item.tiempodecocion}</p>
+                <p>{item.ingredientes}</p>
+                <p>{item.contraindicaciones}</p>
+                <p>{item.metododepreparacion}</p>
+                <p>{item.contraindicaciones}</p>
+				<img src={item.item.imagen} alt=""/>
+				<p>{item.precio}</p>
+			</div>
+		))
+	}-->
 </div>
+
+<style>
+    #sliderPrincipalproductos img{
+        width: 100px;
+    }
+</style>

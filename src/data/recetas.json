@@ -1,7 +1,7 @@
 [
     {
         "nombre": "CHOCO-PASTEL EN TAZA",
-        "Porciones" : "1",
+        "porciones" : "1",
         "tiempodepreparacion": "10 minutos",
         "tiempodecocion": "3 minutos",
         "ingredientes" : "2 cucharas medidoras de Batido Nutricional Fórmula 1 sabor chocoavellana \n 2 cucharadas de Proteína en Polvo Herbalife Nutrition \n ½ taza de agua \n 6 cucharadas de leche descremada \n1 huevo",
@@ -11,24 +11,24 @@
         "precio" : "Aqui va precio"
     },
     {
-        "nombre": "CHOCO-PASTEL EN TAZA",
-        "Porciones" : "1",
+        "nombre": "TRUFAS DE CHOCOLATE CON PROTEÍNAS",
+        "porciones" : "30",
         "tiempodepreparacion": "10 minutos",
-        "tiempodecocion": "3 minutos",
-        "ingredientes" : "2 cucharas medidoras de Batido Nutricional Fórmula 1 sabor chocoavellana \n 2 cucharadas de Proteína en Polvo Herbalife Nutrition \n ½ taza de agua \n 6 cucharadas de leche descremada \n1 huevo",
-        "contraindicaciones" : "*Solo si eres tolerante. La leche descremada puede sustituirse por leche de soya, o leche de almendras.",
-        "metododepreparacion" : "Colocar en una taza grande el huevo, la leche descremada y el agua. Mezclar bien. \n Añadir el Batido Nutricional Fórmula 1 sabor chocoavellana y la Proteína en Polvo. Mezclar hasta integrar bien los ingredientes. \n Llevar la taza al microondas y cocinar por 3 minutos a potencia alta. Decorar con tu fruta favorita antes de servir.  ",
+        "tiempodecocion": "5 minutos",
+        "ingredientes" : "6 cucharas medidoras de Rebuild Strength \n1 cuchara medidora de Rebuild Strength para decorar\n2 cucharadas de semillas de chía de taza de leche de almendras sin azúcar\n½ taza de ciruelas (alrededor de 14)\n½ taza de pasas de taza de chispas de chocolate amargo\n¼ de taza de mantequilla de almendras\n½ taza de avena en hojuelas\n2 cucharadas de extracto de vainilla\n2 cucharadas de miel\n1 cucharada de cocoa en polvo sin azúcar",
+        "contraindicaciones" : "*Sin contraindicaciones",
+        "metododepreparacion" : "Mezclar las semillas de chía con la leche de almendras y dejarlo reposar. \n Combinar las pasas, ciruelas, y la avena. Añadir a esta mezcla la vainilla, la miel, la mantequilla de almendras y chispas de chocolate. \nAgregar la mezcla de semillas de chía con leche de almendras, y combinar hasta que quede una masa uniforme. \n Formar bolitas compactas y dejar reposar. Mezclar una cucharada de Rebuild Strength, \n con cocoa en polvo, en un pequeño bowl y rodar las bolitas por la mezcla.",
         "imagen" : "src/assets/images/logo.png",
         "precio" : "Aqui va precio"
     },
     {
-        "nombre": "CHOCO-PASTEL EN TAZA",
-        "Porciones" : "1",
-        "tiempodepreparacion": "10 minutos",
-        "tiempodecocion": "3 minutos",
-        "ingredientes" : "2 cucharas medidoras de Batido Nutricional Fórmula 1 sabor chocoavellana \n 2 cucharadas de Proteína en Polvo Herbalife Nutrition \n ½ taza de agua \n 6 cucharadas de leche descremada \n1 huevo",
-        "contraindicaciones" : "*Solo si eres tolerante. La leche descremada puede sustituirse por leche de soya, o leche de almendras.",
-        "metododepreparacion" : "Colocar en una taza grande el huevo, la leche descremada y el agua. Mezclar bien. \n Añadir el Batido Nutricional Fórmula 1 sabor chocoavellana y la Proteína en Polvo. Mezclar hasta integrar bien los ingredientes. \n Llevar la taza al microondas y cocinar por 3 minutos a potencia alta. Decorar con tu fruta favorita antes de servir.  ",
+        "nombre": "BATIDO ZEN DE PROTEÍNA CON FRUTOS ROJOS",
+        "porciones" : "1",
+        "tiempodepreparacion": "2 minutos",
+        "tiempodecocion": "1 minutos",
+        "ingredientes" : "2 cucharas medidoras de Batido Nutricional Fórmula 1 sabor fresa \n 2 cucharadas de Proteína en Polvo Herbalife Nutrition \n3 tapas de Herbal Aloe Concentrado sabor original \n 1 taza de agua fría \n ¾ taza de frutos rojos frescos o congelados \n3-5 cubos de hielo",
+        "contraindicaciones" : "*Sin contraindicaciones",
+        "metododepreparacion" : "Colocar todos los ingredientes en la licuadora. Licuar hasta que estén bien mezclados y servir.",
         "imagen" : "src/assets/images/logo.png",
         "precio" : "Aqui va precio"
     }
