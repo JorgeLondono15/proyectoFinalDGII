@@ -1,0 +1,25 @@
+---
+//EN principal van los tres slider de index
+import Productos from "../components/pricipalsliderproductos.astro";
+import Recetas from "../components/pricipalsliderrecetas.astro";
+import Deportivo from "../components/pricipalsliderdeportivo.astro";
+---
+<div id="principalContent">
+    <Productos />
+    <hr>
+    <Recetas />
+    <hr>
+    <Deportivo />
+
+</div>
+
+<style>
+    #principalContent{
+        padding-top: 10px;
+        width: 100%;
+    }
+    hr{
+        width: 70%;
+        border: 1px solid #e0e0e0;
+    }
+</style>

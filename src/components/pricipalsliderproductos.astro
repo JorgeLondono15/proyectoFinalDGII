@@ -1,0 +1,23 @@
+---
+import Productos from "../data/productos.json"
+---
+
+<div id="sliderPrincipalproductos">
+    <h1>Productos</h1>
+    {
+			Productos.map((item) => (
+				<div>
+					<h2>{item.nombre}</h2>
+					<p>{item.descripcion}</p>
+					<img src={item.imagen} alt=""/>
+					<p>{item.caracteristicas}</p>
+				</div>
+		))
+		}
+</div>
+
+<style>
+    #sliderPrincipalproductos img{
+        width: 100px;
+    }
+</style>

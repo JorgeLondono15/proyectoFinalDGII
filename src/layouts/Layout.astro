@@ -13,15 +13,19 @@ const { title } = Astro.props;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-		<link rel="icon" type="image/x-icon" href="src/assets/images/logo.png">	
+		<link rel="icon" type="image/x-icon" href="src/assets/images/logo.png">		
+		<script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
 	<body>
 		<Menu />
 		<slot />
-		
+
+    	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 	</body>
 	<footer>
 		<Footer /> 
@@ -32,13 +36,32 @@ const { title } = Astro.props;
 		--accent: 124, 58, 237;
 		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
 	}
+	a:link {
+    text-decoration: none;
+    color: black;	
+	pointer-events: none;
+	cursor: pointer;
+	}
 	body {
 		margin: 0px;
-		padding: 0px;
 		background-color: #F2F2F4;
+		display: grid;
+		grid-template-rows: auto 1fr auto;
+		min-height: 100vh;
 	}
 	code {
 		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
 			Bitstream Vera Sans Mono, Courier New, monospace;
 	}
+	footer {
+        text-align: center;
+	    padding: 20px 0px 20px 0px;
+		background-color: #2C3434;
+		margin-top: auto;		
+	}
+	.terminos{
+
+		
+	}
 </style>
+

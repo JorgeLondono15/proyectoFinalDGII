@@ -1,13 +1,54 @@
 <script is:inline>
-     $(document).ready(function(){
-        $("#productosNav").click(function(){
-            $("#principalContent").toggle();
+    $(document).ready(function () {
+        $("#productosContent").hide();
+        $("#recetasContent").hide();
+        $("#deportivosContent").hide();
+        $("#nosotrosContent").hide();
+
+        $("#homeNav").click(function () {
+            $("#principalContent").show();
+            $("#productosContent").hide();
+            $("#recetasContent").hide();
+            $("#deportivosContent").hide();
+            $("#nosotrosContent").hide();
         });
-     });
-    
 
-
-    
+        $(".logoNav").click(function () {
+            $("#principalContent").show();
+            $("#productosContent").hide();
+            $("#recetasContent").hide();
+            $("#deportivosContent").hide();
+            $("#nosotrosContent").hide();
+        });
+        $("#productosNav").click(function () {
+            $("#productosContent").show();
+            $("#principalContent").hide();
+            $("#recetasContent").hide();
+            $("#deportivosContent").hide();
+            $("#nosotrosContent").hide();
+        });
+        $("#recetasNav").click(function () {
+            $("#recetasContent").show();
+            $("#principalContent").hide();
+            $("#productosContent").hide();
+            $("#deportivosContent").hide();
+            $("#nosotrosContent").hide();
+        });
+        $("#deportivosNav").click(function () {
+            $("#deportivosContent").show();
+            $("#principalContent").hide();
+            $("#productosContent").hide();
+            $("#recetasContent").hide();
+            $("#nosotrosContent").hide();
+        });
+        $("#nosotrosNav").click(function () {
+            $("#nosotrosContent").show();
+            $("#principalContent").hide();
+            $("#productosContent").hide();
+            $("#recetasContent").hide();
+            $("#deportivosContent").hide();
+        });
+    });
 </script>
 
 <div class="header_content">
@@ -20,6 +61,7 @@
 
     <nav>
         <ul>
+            <li id="homeNav"><a href="#"><i class="fa-sharp fa-solid fa-house"></i></a></li>
             <li id="productosNav"><a href="#">Productos</a></li>
             <li id="recetasNav"><a href="#">Recetas</a></li>
             <li id="deportivosNav"><a href="#">Deportivos</a></li>
@@ -27,7 +69,6 @@
         </ul>
     </nav>
 </div>
-
 
 <style>
     .logoNav {
@@ -54,6 +95,7 @@
         list-style: none;
     }
     nav a {
+        cursor: pointer;
         display: flex;
         align-items: center;
         padding: 0px 20px;
@@ -65,7 +107,12 @@
         color: #000000;
     }
     nav li:hover {
-        background-color: #fff;
-        color: #000;
+        border-radius: 10px;
+        padding: 4px;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 1px 6px rgba(0, 0, 0, 0.05),
+            0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1),
+            8px 32px 32px rgba(0, 0, 0, 0.15), 8px 64px 64px rgba(0, 0, 0, 0.15);
+
+        transform: scale(1.02) translateY(-0.3rem);
     }
 </style>

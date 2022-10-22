@@ -1,26 +1,27 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Productos from "../data/productos.json";
-import Principal from "../components/principal.astro";
+import Principal from "./principal.astro";
+import Productos from "./productos.astro";
+import Recetas from "./recetas.astro";
+import Deportivos from "./deportivos.astro";
+import Nosotros from "./nosotros.astro";
+
 ---
  
 
 <Layout title="Protein Club">
 	<main>
 		<div class="bodymargenes">
-			<!-- <Principal /> -->
-			{
-				Productos.map((item) => (
-					<div>
-						<h2>{item.nombre}</h2>
-						<p>{item.descripcion}</p>
-						<img src={item.imagen} alt=""/>
-						<p>{item.caracteristicas}</p>
-					</div>
-			))
-			}
+			<Principal />
+			<Productos />
+			<Recetas />
+			<Deportivos />
+			<Nosotros />
+
 		</div>
 	</main>
+	
+
 </Layout>
 
 <style>
