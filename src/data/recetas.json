@@ -1,0 +1,35 @@
+[
+    {
+        "nombre": "CHOCO-PASTEL EN TAZA",
+        "Porciones" : "1",
+        "tiempodepreparacion": "10 minutos",
+        "tiempodecocion": "3 minutos",
+        "ingredientes" : "2 cucharas medidoras de Batido Nutricional Fórmula 1 sabor chocoavellana \n 2 cucharadas de Proteína en Polvo Herbalife Nutrition \n ½ taza de agua \n 6 cucharadas de leche descremada \n1 huevo",
+        "contraindicaciones" : "*Solo si eres tolerante. La leche descremada puede sustituirse por leche de soya, o leche de almendras.",
+        "metododepreparacion" : "Colocar en una taza grande el huevo, la leche descremada y el agua. Mezclar bien. \n Añadir el Batido Nutricional Fórmula 1 sabor chocoavellana y la Proteína en Polvo. Mezclar hasta integrar bien los ingredientes. \n Llevar la taza al microondas y cocinar por 3 minutos a potencia alta. Decorar con tu fruta favorita antes de servir.  ",
+        "imagen" : "src/assets/images/logo.png",
+        "precio" : "Aqui va precio"
+    },
+    {
+        "nombre": "CHOCO-PASTEL EN TAZA",
+        "Porciones" : "1",
+        "tiempodepreparacion": "10 minutos",
+        "tiempodecocion": "3 minutos",
+        "ingredientes" : "2 cucharas medidoras de Batido Nutricional Fórmula 1 sabor chocoavellana \n 2 cucharadas de Proteína en Polvo Herbalife Nutrition \n ½ taza de agua \n 6 cucharadas de leche descremada \n1 huevo",
+        "contraindicaciones" : "*Solo si eres tolerante. La leche descremada puede sustituirse por leche de soya, o leche de almendras.",
+        "metododepreparacion" : "Colocar en una taza grande el huevo, la leche descremada y el agua. Mezclar bien. \n Añadir el Batido Nutricional Fórmula 1 sabor chocoavellana y la Proteína en Polvo. Mezclar hasta integrar bien los ingredientes. \n Llevar la taza al microondas y cocinar por 3 minutos a potencia alta. Decorar con tu fruta favorita antes de servir.  ",
+        "imagen" : "src/assets/images/logo.png",
+        "precio" : "Aqui va precio"
+    },
+    {
+        "nombre": "CHOCO-PASTEL EN TAZA",
+        "Porciones" : "1",
+        "tiempodepreparacion": "10 minutos",
+        "tiempodecocion": "3 minutos",
+        "ingredientes" : "2 cucharas medidoras de Batido Nutricional Fórmula 1 sabor chocoavellana \n 2 cucharadas de Proteína en Polvo Herbalife Nutrition \n ½ taza de agua \n 6 cucharadas de leche descremada \n1 huevo",
+        "contraindicaciones" : "*Solo si eres tolerante. La leche descremada puede sustituirse por leche de soya, o leche de almendras.",
+        "metododepreparacion" : "Colocar en una taza grande el huevo, la leche descremada y el agua. Mezclar bien. \n Añadir el Batido Nutricional Fórmula 1 sabor chocoavellana y la Proteína en Polvo. Mezclar hasta integrar bien los ingredientes. \n Llevar la taza al microondas y cocinar por 3 minutos a potencia alta. Decorar con tu fruta favorita antes de servir.  ",
+        "imagen" : "src/assets/images/logo.png",
+        "precio" : "Aqui va precio"
+    }
+]
