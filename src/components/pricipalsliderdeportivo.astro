@@ -1,3 +1,22 @@
+---
+
+import Deportivos from "../data/deportivos.json";
+
+---
+
 <div id="sliderPrincipaldeportivos">
     <h1>Deportivos</h1>
+    {
+		Deportivos.map((item) => (
+			<div>
+				<h2>{item.nombre}</h2>
+				<p>{item.descripcion}</p>
+                <p>{item.beneficios}</p>
+                <p>{item.caracteristicas}</p>
+                <p>{item.precio}</p>
+				<img src={item.imagen} alt=""/>
+				<p>{item.precio}</p>
+			</div>
+		))
+	}
 </div>

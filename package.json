@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "astro": "^1.5.0",
+    "fs": "^0.0.1-security",
     "jquery": "^3.6.1"
   },
   "devDependencies": {

@@ -1,12 +1,12 @@
 ---
 
-import Recetas from "../pages/recetas.astro";
+import Recetas from "../data/recetas.json";
 
 ---
 
  <div id="sliderPrincipalrecetas">
     <h1>Recetas</h1>
-    <!--{
+    {
 		Recetas.map((item) => (
 			<div>
 				<h2>{item.nombre}</h2>
@@ -17,11 +17,11 @@ import Recetas from "../pages/recetas.astro";
                 <p>{item.contraindicaciones}</p>
                 <p>{item.metododepreparacion}</p>
                 <p>{item.contraindicaciones}</p>
-				<img src={item.item.imagen} alt=""/>
+				<img src={item.imagen} alt=""/>
 				<p>{item.precio}</p>
 			</div>
 		))
-	}-->
+	}
 </div>
 
 <style>
