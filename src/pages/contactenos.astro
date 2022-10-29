@@ -1,10 +1,104 @@
 <div id="contactenosContent">
-    <h1>Esta es pagina d econtactenos</h1>
+
+        <h1>Contáctenos </h1>
+     <form action="registro.php" method="post" class="form-register" onsubmit="return validar();">
+        
+         <div class="contenedor-inputs">
+             <input type="text" id="nombre" name="nombre" placeholder="Ingrese sus nombres" class="input-48" >
+    
+             <input type="text" id="apellidos" name="apellidos" placeholder="Ingrese sus apellidos" class="input-48">
+    
+             <input type="email" id="correo" name="correo" placeholder="Ingrese su correo" class="input-100">
+    
+    
+             <input type="submit" value="Enviar" class="btn-enviar">
+    
+             
+    
+         </div>
+         
+     </form>
+    
+    
+    
+    
+
 </div>
 
 <style>
     #contactenosContent{
         padding-top: 10px;
         width: 100%;
+
     }
+
+    *{
+	box-sizing: border-box;
+}
+
+h1{
+	color: rgb(92, 88, 88);
+	text-align: center;
+}
+.form-register{
+	width: 98%;
+	max-width: 500px;
+	margin: auto;
+	background:  white;
+	border-radius: 10px;
+}
+
+.form__titulo{
+	background: deepskyblue;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+	font-weight: 100;
+	font-size: 30px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom: 5px solid rgb(69, 102, 42);
+}
+.contenedor-inputs{
+	padding: 10px 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between; /*para que nos de un espacio entre los inputs del formulario*/
+}
+input{
+	margin-bottom: 15px;
+	padding: 15px;
+	font-size: 16px;
+	border-radius: 3px;
+	border:1px solid darkgreen; /*Para darle un color a los border de las casillas*/
+}
+.input-48{
+	width: 48%;
+}
+.input-100{
+	width: 100%;
+}
+.btn-enviar{
+	background: rgba(47, 75, 22, 0.747);
+	color: #fff;
+	margin: auto;
+	padding: 10px 40px;
+	cursor: pointer;
+	font-size:20px;
+
+}
+.btn-enviar active{
+	transform: scale(1.10); /*Para que cuando le demos click al boton se ponga más grande*/
+    
+}
+.form__link{
+	width: 100%;
+	margin:7px;
+	text-align: center;
+	font-size: 14px;
+}
+
+
+
+
 </style>
