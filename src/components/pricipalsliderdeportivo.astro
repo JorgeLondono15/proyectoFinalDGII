@@ -1,22 +1,70 @@
 ---
-
 import Deportivos from "../data/deportivos.json";
-
 ---
 
+<script is:inline>
+	$(document).ready(function () {
+		$("#sliderPrincipaldeportivos").slick({
+			prevArrow:
+				"<img class='a-left control-c prev slick-prev' style='width:60px' src='src/assets/images/icon/atras.svg'>",
+			nextArrow:
+				"<img class='a-right control-c next slick-next' style='width:60px' src='src/assets/images/icon/next.svg'>",
+			slidesToShow: 2,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 8000,
+		});
+	});
+</script>
+
+<h1>Deportivos</h1>
 <div id="sliderPrincipaldeportivos">
-    <h1>Deportivos</h1>
-    {
+	{
 		Deportivos.map((item) => (
-			<div>
+			<div class="tamanoSlider">
+				<img src={item.imagen} alt="" />
 				<h2>{item.nombre}</h2>
-				<p>{item.descripcion}</p>
-                <p>{item.beneficios}</p>
-                <p>{item.caracteristicas}</p>
-                <p>{item.precio}</p>
-				<img src={item.imagen} alt=""/>
-				<p>{item.precio}</p>
 			</div>
 		))
 	}
 </div>
+
+<style>
+	#sliderPrincipaldeportivos img {
+		width: 350px;
+	}
+	#sliderPrincipaldeportivos {
+		width: 1664px;
+		align-items: center;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: nowrap;
+		flex-direction: row;
+	}
+	.tamanoSlider {
+		display: block;
+		justify-content: space-around;
+		flex-wrap: nowrap;
+		text-align: center;
+		flex-direction: row;
+	}
+	.tamanoSlider img {
+		margin: auto;
+	}
+	h3 {
+		margin: 5px 0px;
+		line-height: 100%;
+		font-weight: 550;
+		font-size: 26px;
+		font-family: Palatino Linotype;
+		color: #000000;
+		font-style: italic;
+	}
+	h1 {
+		line-height: 100%;
+		font-weight: 550;
+		font-size: 36px;
+		font-family: Palatino Linotype;
+		color: #000000;
+	}
+</style>

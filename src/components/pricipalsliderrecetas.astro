@@ -1,31 +1,70 @@
 ---
-
 import Recetas from "../data/recetas.json";
-
 ---
 
- <div id="sliderPrincipalrecetas">
-    <h1>Recetas</h1>
+<script is:inline>
+	$(document).ready(function () {
+		$("#sliderPrincipalrecetas").slick({
+			prevArrow:
+				"<img class='a-left control-c prev slick-prev' style='width:60px' src='src/assets/images/icon/atras.svg'>",
+			nextArrow:
+				"<img class='a-right control-c next slick-next' style='width:60px' src='src/assets/images/icon/next.svg'>",
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 12000,
+		});
+	});
+</script>
+
+<h1>Recetas</h1>
+<div id="sliderPrincipalrecetas">
     {
-		Recetas.map((item) => (
-			<div>
-				<h2>{item.nombre}</h2>
-				<p>{item.porciones}</p>
-                <p>{item.tiempodepreparacion}</p>
-                <p>{item.tiempodecocion}</p>
-                <p>{item.ingredientes}</p>
-                <p>{item.contraindicaciones}</p>
-                <p>{item.metododepreparacion}</p>
-                <p>{item.contraindicaciones}</p>
-				<img src={item.imagen} alt=""/>
-				<p>{item.precio}</p>
-			</div>
-		))
-	}
+        Recetas.map((item) => (
+            <div class="tamanoSlider">
+                <img src={item.imagen} alt="" />
+                <h3>{item.nombre}</h3>
+            </div>
+        ))
+    }
 </div>
 
 <style>
-    #sliderPrincipalproductos img{
-        width: 100px;
+    #sliderPrincipalrecetas img {
+        width: 350px;
+    }
+    #sliderPrincipalrecetas {
+        width: 1664px;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    .tamanoSlider {
+        display: block;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        text-align: center;
+        flex-direction: row;
+    }
+    .tamanoSlider img {
+        margin: auto;
+    }
+    h3 {
+        margin: 10px 0px;
+        line-height: 100%;
+        font-weight: 550;
+        font-size: 26px;
+        font-family: Palatino Linotype;
+        color: #000000;
+        font-style: italic;
+    }
+    h1 {
+        line-height: 100%;
+        font-weight: 550;
+        font-size: 36px;
+        font-family: Palatino Linotype;
+        color: #000000;
     }
 </style>

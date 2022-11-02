@@ -4,7 +4,7 @@
         "descripcion" : "Drive es una mezcla en polvo para preparar bebida hidratante a base de glucosa y sacarosa \n que aporta electrolitos  y energía, gracias a su mezcla de carbohidratos, para ayudar a obtener un máximo provecho en los entrenamientos y apoyar el rendimiento. \nUtiliza Herbalife24 Drive antes del entrenamiento para ayudar a completar las reservas de glucógeno y apoyar una hidratación adecuada, durante la actividad física para ayudar a mantener un adecuado nivel de hidratación y aportar energía, y después de la competencia, para ayudar a reponer los electrolitos perdidos en el sudor durante el entrenamiento y ayudar a restaurar el glucógeno muscular.",
         "beneficios": "Rico en vitaminas del complejo B: B1 (tiamina), B5 (ácido pantoténico), B6 (piridoxina).\n 25 g de proteína por porción. \nAlimento en polvo rico en proteínas de leche y suero de leche con vitaminas y minerales. \n Aporta glutamina y aminoácidos ramificados* \nAporte de carbohidratos: mezcla de fructosa, maltodextrina y sacarosa (Para promover una absorción rápida y sostenida).\n Rico en hierro, calcio y magnesio.\n 18 g de carbohidratos por porción",
         "caracteristicas": "Drive es una mezcla en polvo para preparar bebida hidratante a base de glucosa y sacarosa, con vitaminas y minerales. \n 13 g de carbohidratos por porción. \nCuatro fuentes diferentes de carbohidratos.\n Electrolitos: Sodio, Potasio y Magnesio. \nVitaminas del complejo B: B1 (Tiamina)  y B12 (cobalamina). \n 50 Calorías por porción. \n No contiene saborizantes o edulcorantes artificiales. \n Sabor Açai - Frutos Rojos",
-        "imagen" : "src/assets/images/deportivo-1.png",
+        "imagen" : "src/assets/images/CR7.png",
         "precio" : "Aqui va precio"
     },
     {
@@ -12,7 +12,7 @@
         "descripcion" : "Rebuild Strength de Herbalife Nutrition es un alimento rico en proteínas de leche y suero de leche, \n con vitaminas y minerales. Consúmelo en los 30 minutos posteriores a la actividad física.",
         "beneficios": "Rico en vitaminas del complejo B: B1 (tiamina), B5 (ácido pantoténico), B6 (piridoxina). \n 25 g de proteína por porción. \n Alimento en polvo rico en proteínas de leche y suero de leche con vitaminas y minerales. \n Aporta glutamina y aminoácidos ramificados* \n Aporte de carbohidratos: mezcla de fructosa, maltodextrina y sacarosa (Para promover una absorción rápida y sostenida). \n Rico en hierro, calcio y magnesio. \n 18 g de carbohidratos por porción",
         "caracteristicas": "Drive es una mezcla en polvo para preparar bebida hidratante a base de glucosa y sacarosa, con vitaminas y minerales. \n 13 g de carbohidratos por porción. \nCuatro fuentes diferentes de carbohidratos.\n Electrolitos: Sodio, Potasio y Magnesio. \nVitaminas del complejo B: B1 (Tiamina)  y B12 (cobalamina). \n 50 Calorías por porción. \n No contiene saborizantes o edulcorantes artificiales. \n Sabor Açai - Frutos Rojos",
-        "imagen" : "src/assets/images/deportivo-2.png",
+        "imagen" : "src/assets/images/REBUILD.png",
         "precio" : "Aqui va precio"
     },
     {
@@ -20,7 +20,15 @@
         "descripcion" : "Drive es una mezcla en polvo para preparar bebida hidratante a base de glucosa y sacarosa \n que aporta electrolitos  y energía, gracias a su mezcla de carbohidratos, para ayudar a obtener un máximo provecho en los entrenamientos y apoyar el rendimiento. \nUtiliza Herbalife24 Drive antes del entrenamiento para ayudar a completar las reservas de glucógeno y apoyar una hidratación adecuada, durante la actividad física para ayudar a mantener un adecuado nivel de hidratación y aportar energía, y después de la competencia, para ayudar a reponer los electrolitos perdidos en el sudor durante el entrenamiento y ayudar a restaurar el glucógeno muscular.",
         "beneficios": "Rico en vitaminas del complejo B: B1 (tiamina), B5 (ácido pantoténico), B6 (piridoxina).\n 25 g de proteína por porción. \nAlimento en polvo rico en proteínas de leche y suero de leche con vitaminas y minerales. \n Aporta glutamina y aminoácidos ramificados* \nAporte de carbohidratos: mezcla de fructosa, maltodextrina y sacarosa (Para promover una absorción rápida y sostenida).\n Rico en hierro, calcio y magnesio.\n 18 g de carbohidratos por porción",
         "caracteristicas": "Drive es una mezcla en polvo para preparar bebida hidratante a base de glucosa y sacarosa, con vitaminas y minerales. \n 13 g de carbohidratos por porción. \nCuatro fuentes diferentes de carbohidratos.\n Electrolitos: Sodio, Potasio y Magnesio. \nVitaminas del complejo B: B1 (Tiamina)  y B12 (cobalamina). \n 50 Calorías por porción. \n No contiene saborizantes o edulcorantes artificiales. \n Sabor Açai - Frutos Rojos",
-        "imagen" : "src/assets/images/deportivo-3.png",
+        "imagen" : "src/assets/images/CR7.png",
+        "precio" : "Aqui va precio"
+    },
+    {
+        "nombre": "Rebuild Strength-Chocolate-1000 gr",
+        "descripcion" : "Rebuild Strength de Herbalife Nutrition es un alimento rico en proteínas de leche y suero de leche, \n con vitaminas y minerales. Consúmelo en los 30 minutos posteriores a la actividad física.",
+        "beneficios": "Rico en vitaminas del complejo B: B1 (tiamina), B5 (ácido pantoténico), B6 (piridoxina). \n 25 g de proteína por porción. \n Alimento en polvo rico en proteínas de leche y suero de leche con vitaminas y minerales. \n Aporta glutamina y aminoácidos ramificados* \n Aporte de carbohidratos: mezcla de fructosa, maltodextrina y sacarosa (Para promover una absorción rápida y sostenida). \n Rico en hierro, calcio y magnesio. \n 18 g de carbohidratos por porción",
+        "caracteristicas": "Drive es una mezcla en polvo para preparar bebida hidratante a base de glucosa y sacarosa, con vitaminas y minerales. \n 13 g de carbohidratos por porción. \nCuatro fuentes diferentes de carbohidratos.\n Electrolitos: Sodio, Potasio y Magnesio. \nVitaminas del complejo B: B1 (Tiamina)  y B12 (cobalamina). \n 50 Calorías por porción. \n No contiene saborizantes o edulcorantes artificiales. \n Sabor Açai - Frutos Rojos",
+        "imagen" : "src/assets/images/REBUILD.png",
         "precio" : "Aqui va precio"
     }
 ]

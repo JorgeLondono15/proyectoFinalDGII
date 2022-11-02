@@ -1,23 +1,69 @@
 ---
-import Productos from "../data/productos.json"
+import Productos from "../data/productos.json";
 ---
 
+<script is:inline>
+	$(document).ready(function () {
+		$("#sliderPrincipalproductos").slick({
+			prevArrow:
+				"<img class='a-left control-c prev slick-prev' style='width:60px' src='src/assets/images/icon/atras.svg'>",
+			nextArrow:
+				"<img class='a-right control-c next slick-next' style='width:60px' src='src/assets/images/icon/next.svg'>",
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 6000,
+		});
+	});
+</script>
+<h1>Productos</h1>
 <div id="sliderPrincipalproductos">
-    <h1>Productos</h1>
-    {
-			Productos.map((item) => (
-				<div>
-					<h2>{item.nombre}</h2>
-					<p>{item.descripcion}</p>
-					<img src={item.imagen} alt=""/>
-					<p>{item.caracteristicas}</p>
-				</div>
+	{
+		Productos.map((item) => (
+			<div class="tamanoSlider">
+				<img src={item.imagen} alt="" />
+				<h3>{item.nombre}</h3>
+			</div>
 		))
-		}
+	}
 </div>
 
 <style>
-    #sliderPrincipalproductos img{
-        width: 100px;
-    }
+	#sliderPrincipalproductos img {
+		width: 250px;
+	}
+	#sliderPrincipalproductos {
+		width: 1664px;
+		align-items: center;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: nowrap;
+		flex-direction: row;
+	}
+	.tamanoSlider {
+		display: block;
+		justify-content: space-around;
+		flex-wrap: nowrap;
+		text-align: center;
+		flex-direction: row;
+	}
+	.tamanoSlider img {
+		margin: auto;
+	}
+	h3 {
+		margin: 5px 0px;
+		line-height: 100%;
+		font-weight: 550;
+		font-size: 30px;
+		font-family: Palatino Linotype;
+		color: #000000;
+		font-style: italic;
+	}
+	h1 {
+		line-height: 100%;
+		font-weight: 550;
+		font-size: 36px;
+		font-family: Palatino Linotype;
+		color: #000000;
+	}
 </style>
