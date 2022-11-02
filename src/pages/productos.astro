@@ -1,10 +1,116 @@
+---
+import Productos from "../data/productos.json";
+---
+
+<script is:inline>
+    $(document).ready(function () {
+        var clickproductoscontent = document.getElementById("productosNav");
+        clickproductoscontent.addEventListener("click", function (e) {
+            $("#productosContent").slick({
+                prevArrow:
+                    "<img class='a-left control-c prev slick-prev' style='width:60px' src='src/assets/images/icon/atras.svg'>",
+                nextArrow:
+                    "<img class='a-right control-c next slick-next' style='width:60px' src='src/assets/images/icon/next.svg'>",
+                slidesToShow: 1,
+                fade: true,
+            });
+        });
+    });
+</script>
+
 <div id="productosContent">
-    <h1>Esta es pagina de productos</h1>
+    {
+        Productos.map((item) => (
+            <div class="tamanoSliderProductos">
+                <div>
+                    <img src={item.imageninterna} alt="" />
+                </div>
+                <div>
+                    <h2>{item.nombre}</h2>
+                    <h3>Descripción</h3>
+                    <p class="descripcion">{item.descripcion}</p>
+                    <h3>Caracteristicas</h3>
+                    <p class="caracteristicas">{item.caracteristicas}</p>
+                    <div class="centrado">
+                        <p class="precio1">{item.precio}</p>
+                        <p class="precio2">{item.precio}</p>
+                        <i class="fa-sharp fa-solid fa-house iconoprecio"></i>
+                    </div>
+                    
+                </div>
+            </div>
+        ))
+    }
 </div>
 
 <style>
-    #productosContent{
-        padding-top: 10px;
-        width: 100%;
+    .slick-initialized .slick-slide{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
     }
+    .centrado{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    #productosContent {
+        padding-top: 10px;
+        width: 1664px;
+        align-items: center;
+        display: flex;
+		justify-content: space-around;
+		flex-wrap: nowrap;
+		flex-direction: row;
+    }
+    #productosContent img {
+        height: 450px;
+        margin: auto;
+    }
+    .tamanoSliderProductos{
+        margin: 10px 0px;
+        height: 500px;
+    }
+    h2 {
+        text-align: start;
+		margin: 5px 0px;
+		line-height: 100%;
+		font-weight: 600;
+		font-size: 45px;
+		font-family: Palatino Linotype;
+		color: #000000;
+		font-style: italic;
+	}
+    h3 {
+        text-align: center;
+		margin: 35px 0px;
+		line-height: 100%;
+		font-weight: 600;
+		font-size: 35px;
+		font-family: Palatino Linotype;
+		color: #000000;
+		font-style: italic;
+	}
+    .descripcion{
+        margin: auto;
+        width: 60%;
+        text-align: initial;
+    }
+    .caracteristicas{
+        margin: auto;
+        width: 80%;
+        text-align: center;
+    }
+    .precio1{
+        margin: 10px;
+        color:greenyellow;
+    }
+    .precio2{
+        margin: 10px;
+    }
+    .iconoprecio{
+        margin: 10px;
+    }
+
 </style>
