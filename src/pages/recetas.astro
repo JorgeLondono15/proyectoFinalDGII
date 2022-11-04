@@ -1,10 +1,102 @@
+---
+import Recetas from "../data/recetas.json";
+import Separar from "../components/separar.astro";
+---
+
+<script is:inline>
+    $(document).ready(function () {
+        var clickdeportivoscontent = document.getElementById("recetasNav");
+        clickdeportivoscontent.addEventListener("click", function (e) {
+            $("#recetasContent").slick({
+                prevArrow:
+                    "<img class='a-left control-c prev slick-prev' style='width:60px' src='src/assets/images/icon/atras.svg'>",
+                nextArrow:
+                    "<img class='a-right control-c next slick-next' style='width:60px' src='src/assets/images/icon/next.svg'>",
+                slidesToShow: 1,
+                fade: true,
+            });
+        });
+    });
+</script>
+
 <div id="recetasContent">
-    <h1>Esta es pagina de recetas</h1>
+    {
+        Recetas.map((item) => (
+            <div class="tamanoSliderRecetas">
+                <div>
+                    <img class="imagenRecetas" src={item.imagen} alt="" />
+                </div>
+                <div>
+                    <h2>{item.nombre}</h2>
+                    <div class="descripcion">
+                        <p>Porciones: {item.porciones}</p>
+                        <p>Tiempo de preparación: {item.tiempodepreparacion}</p>
+                        <p>Tiempo de cocción: {item.tiempodecocion}</p>
+                    </div>
+                    <h3>Ingredientes</h3>
+                    <Separar elemento={item.ingredientes} />
+                    <h3>Metodo de preparación</h3>
+                    <Separar elemento={item.metododepreparacion} />
+                </div>
+            </div>
+        ))
+    }
 </div>
 
 <style>
-    #recetasContent{
+    .imagenRecetas {
+        height: 450px;
+        margin: auto;
+    }
+    .slick-initialized .slick-slide {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .imagenDeportivo {
+        height: 450px;
+        margin: auto;
+    }
+    .tamanoSliderRecetas {
+        margin: 10px 0px;
+        height: 100%;
+    }
+    #recetasContent {
         padding-top: 10px;
+        width: 1664px;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    .descripcion{
+        padding: 10px 0px 0px 0px;
+    }
+    .descripcion p {
+        margin: auto;
         width: 100%;
+        text-align: initial;
+    }
+    h2 {
+        text-align: start;
+        margin: 5px 0px;
+        line-height: 100%;
+        font-weight: 600;
+        font-size: 30px;
+        font-family: Palatino Linotype;
+        color: #000000;
+        font-style: italic;
+    }
+    h3 {
+        text-align: center;
+        margin: 35px 0px;
+        line-height: 100%;
+        font-weight: 600;
+        font-size: 35px;
+        font-family: Palatino Linotype;
+        color: #000000;
+        font-style: italic;
     }
 </style>

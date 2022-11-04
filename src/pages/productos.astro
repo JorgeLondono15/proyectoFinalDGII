@@ -23,7 +23,7 @@ import Productos from "../data/productos.json";
         Productos.map((item) => (
             <div class="tamanoSliderProductos">
                 <div>
-                    <img src={item.imageninterna} alt="" />
+                    <img class="imagenProducto" src={item.imageninterna} alt="" />
                 </div>
                 <div>
                     <h2>{item.nombre}</h2>
@@ -32,9 +32,9 @@ import Productos from "../data/productos.json";
                     <h3>Caracteristicas</h3>
                     <p class="caracteristicas">{item.caracteristicas}</p>
                     <div class="centrado">
-                        <p class="precio1">{item.precio}</p>
+                        <p class="precio1"><del>{item.precio}</del></p>
                         <p class="precio2">{item.precio}</p>
-                        <i class="fa-sharp fa-solid fa-house iconoprecio"></i>
+                        <img class="imagenCarrito" src="/src/assets/images/icon/Carrito.png" alt=""/>
                     </div>
                     
                 </div>
@@ -44,12 +44,17 @@ import Productos from "../data/productos.json";
 </div>
 
 <style>
+    .imagenCarrito{
+        width: 40px;
+        height: 40px;
+    }
     .slick-initialized .slick-slide{
         display: flex;
         align-items: center;
         flex-direction: row;
     }
     .centrado{
+        margin: 20px 0px;
         display: flex;
         align-items: center;
         flex-direction: row;
@@ -64,13 +69,13 @@ import Productos from "../data/productos.json";
 		flex-wrap: nowrap;
 		flex-direction: row;
     }
-    #productosContent img {
+    .imagenProducto {
         height: 450px;
         margin: auto;
     }
     .tamanoSliderProductos{
         margin: 10px 0px;
-        height: 500px;
+        height: 100%;
     }
     h2 {
         text-align: start;
@@ -103,13 +108,25 @@ import Productos from "../data/productos.json";
         text-align: center;
     }
     .precio1{
+        text-align: center;
+		margin: 35px 0px;
+		line-height: 100%;
+		font-weight: 600;
+		font-size: 30px;
+		font-family: Palatino Linotype;
+		font-style: italic;
         margin: 10px;
-        color:greenyellow;
+        color:red;
     }
     .precio2{
-        margin: 10px;
-    }
-    .iconoprecio{
+        text-align: center;
+		margin: 35px 0px;
+		line-height: 100%;
+		font-weight: 600;
+		font-size: 20px;
+		font-family: Palatino Linotype;
+		color: #000000;
+		font-style: italic;
         margin: 10px;
     }
 

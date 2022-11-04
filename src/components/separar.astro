@@ -1,0 +1,14 @@
+---
+const { elemento } = Astro.props;
+var objeto = elemento.split("\n");
+---
+
+<div class="separadoItem">
+    {objeto.map((item) => <p class="ingredientesCDA">{item}</p>)}
+</div>
+
+<style>
+    .separadoItem{
+        line-height: 80%;
+    }
+</style>

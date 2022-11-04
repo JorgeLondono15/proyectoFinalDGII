@@ -4,22 +4,59 @@ import Productos from "../components/pricipalsliderproductos.astro";
 import Recetas from "../components/pricipalsliderrecetas.astro";
 import Deportivo from "../components/pricipalsliderdeportivo.astro";
 ---
+
+<script is:inline>
+    $(document).ready(function () {
+        var clickhome = document.getElementById("homeNav");
+        clickhome.addEventListener("click", function (e) {
+            $("#sliderPrincipalproductos").slick({
+                prevArrow:
+                    "<img class='a-left control-c prev slick-prev' style='width:60px' src='src/assets/images/icon/atras.svg'>",
+                nextArrow:
+                    "<img class='a-right control-c next slick-next' style='width:60px' src='src/assets/images/icon/next.svg'>",
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 6000,
+            });
+            $("#sliderPrincipaldeportivos").slick({
+                prevArrow:
+                    "<img class='a-left control-c prev slick-prev' style='width:60px' src='src/assets/images/icon/atras.svg'>",
+                nextArrow:
+                    "<img class='a-right control-c next slick-next' style='width:60px' src='src/assets/images/icon/next.svg'>",
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 8000,
+            });
+            $("#sliderPrincipalrecetas").slick({
+                prevArrow:
+                    "<img class='a-left control-c prev slick-prev' style='width:60px' src='src/assets/images/icon/atras.svg'>",
+                nextArrow:
+                    "<img class='a-right control-c next slick-next' style='width:60px' src='src/assets/images/icon/next.svg'>",
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 12000,
+            });
+        });
+    });
+</script>
+
 <div id="principalContent">
     <Productos />
-    <hr>
+    <hr />
     <Recetas />
-    <hr>
+    <hr />
     <Deportivo />
 </div>
 
-
-
 <style>
-    #principalContent{
+    #principalContent {
         padding-top: 10px;
         width: 100%;
     }
-    hr{
+    hr {
         width: 70%;
         border: 1px solid #e0e0e0;
     }

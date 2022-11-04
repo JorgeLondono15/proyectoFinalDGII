@@ -1,10 +1,134 @@
+---
+import Deportivo from "../data/deportivos.json";
+---
+
+
+<script is:inline>
+    $(document).ready(function () {
+        var clickdeportivoscontent = document.getElementById("deportivosNav");
+        clickdeportivoscontent.addEventListener("click", function (e) {
+            $("#deportivosContent").slick({
+                prevArrow:
+                    "<img class='a-left control-c prev slick-prev' style='width:60px' src='src/assets/images/icon/atras.svg'>",
+                nextArrow:
+                    "<img class='a-right control-c next slick-next' style='width:60px' src='src/assets/images/icon/next.svg'>",
+                slidesToShow: 1,
+                fade: true,
+            });
+        });
+    });
+</script>
+
+
 <div id="deportivosContent">
-    <h1>Esta es pagina de deportivos</h1>
+    {
+        Deportivo.map((item) => (
+            <div class="tamanoSliderDeportivos">
+                <div>
+                    <img class="imagenDeportivo" src={item.imageninterna} alt="" />
+                </div>
+                <div>
+                    <h2>{item.nombre}</h2>
+                    <h3>Descripción</h3>
+                    <p class="descripcion">{item.descripcion}</p>
+                    <h3>Caracteristicas</h3>
+                    <p class="caracteristicas">{item.caracteristicas}</p>
+                    <div class="centrado">
+                        <p class="precio1"><del>{item.precio}</del></p>
+                        <p class="precio2">{item.precio}</p>
+                        <img class="imagenCarrito" src="/src/assets/images/icon/Carrito.png" alt=""/>
+                    </div>
+                    
+                </div>
+            </div>
+        ))
+    }
 </div>
 
 <style>
+    .imagenCarrito{
+        width: 40px;
+        height: 40px;
+    }
+    .slick-initialized .slick-slide{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    .centrado{
+        margin: 20px 0px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
     #deportivosContent{
         padding-top: 10px;
-        width: 100%;
+        width: 1664px;
+        align-items: center;
+        display: flex;
+		justify-content: space-around;
+		flex-wrap: nowrap;
+		flex-direction: row;
+    }
+    .imagenDeportivo {
+        height: 450px;
+        margin: auto;
+    }
+    .tamanoSliderDeportivos{
+        margin: 10px 0px;
+        height: 100%;
+    }
+    h2 {
+        text-align: start;
+		margin: 5px 0px;
+		line-height: 100%;
+		font-weight: 600;
+		font-size: 45px;
+		font-family: Palatino Linotype;
+		color: #000000;
+		font-style: italic;
+	}
+    h3 {
+        text-align: center;
+		margin: 35px 0px;
+		line-height: 100%;
+		font-weight: 600;
+		font-size: 35px;
+		font-family: Palatino Linotype;
+		color: #000000;
+		font-style: italic;
+	}
+    .descripcion{
+        margin: auto;
+        width: 60%;
+        text-align: initial;
+    }
+    .caracteristicas{
+        margin: auto;
+        width: 80%;
+        text-align: center;
+    }
+    .precio1{
+        text-align: center;
+		margin: 35px 0px;
+		line-height: 100%;
+		font-weight: 600;
+		font-size: 30px;
+		font-family: Palatino Linotype;
+		font-style: italic;
+        margin: 10px;
+        color:red;
+    }
+    .precio2{
+        text-align: center;
+		margin: 35px 0px;
+		line-height: 100%;
+		font-weight: 600;
+		font-size: 20px;
+		font-family: Palatino Linotype;
+		color: #000000;
+		font-style: italic;
+        margin: 10px;
     }
 </style>
