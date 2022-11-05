@@ -9,9 +9,9 @@ import Separar from "../components/separar.astro";
         clickdeportivoscontent.addEventListener("click", function (e) {
             $("#recetasContent").slick({
                 prevArrow:
-                    "<img class='a-left control-c prev slick-prev' style='width:60px' src='src/assets/images/icon/atras.svg'>",
+                    "<img class='a-left control-c prev slick-prev' style='width:60px; position:absolute; top:35%; left:-10px' src='src/assets/images/icon/atras.svg'>",
                 nextArrow:
-                    "<img class='a-right control-c next slick-next' style='width:60px' src='src/assets/images/icon/next.svg'>",
+                    "<img class='a-right control-c next slick-next' style='width:60px; position:absolute; top:35%; right:-10px' src='src/assets/images/icon/next.svg'>",
                 slidesToShow: 1,
                 fade: true,
             });
@@ -66,12 +66,11 @@ import Separar from "../components/separar.astro";
         padding-top: 10px;
         width: 1664px;
         align-items: center;
-        display: flex;
         justify-content: space-around;
         flex-wrap: nowrap;
         flex-direction: row;
     }
-    .descripcion{
+    .descripcion {
         padding: 10px 0px 0px 0px;
     }
     .descripcion p {

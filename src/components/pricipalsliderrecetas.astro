@@ -5,10 +5,10 @@ import Recetas from "../data/recetas.json";
 <script is:inline>
 	$(document).ready(function () {
 		$("#sliderPrincipalrecetas").slick({
-			prevArrow:
-				"<img class='a-left control-c prev slick-prev' style='width:60px' src='src/assets/images/icon/atras.svg'>",
+            prevArrow:
+				"<img class='a-left control-c prev slick-prev' style='width:60px; position:absolute; top:35%; left:-10px' src='src/assets/images/icon/atras.svg'>",
 			nextArrow:
-				"<img class='a-right control-c next slick-next' style='width:60px' src='src/assets/images/icon/next.svg'>",
+				"<img class='a-right control-c next slick-next' style='width:60px; position:absolute; top:35%; right:-10px' src='src/assets/images/icon/next.svg'>",
 			slidesToShow: 3,
 			slidesToScroll: 1,
 			autoplay: true,
@@ -36,7 +36,6 @@ import Recetas from "../data/recetas.json";
     #sliderPrincipalrecetas {
         width: 1664px;
         align-items: center;
-        display: flex;
         justify-content: space-around;
         flex-wrap: nowrap;
         flex-direction: row;

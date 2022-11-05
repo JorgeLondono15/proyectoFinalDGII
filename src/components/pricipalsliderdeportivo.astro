@@ -6,9 +6,9 @@ import Deportivos from "../data/deportivos.json";
 	$(document).ready(function () {
 		$("#sliderPrincipaldeportivos").slick({
 			prevArrow:
-				"<img class='a-left control-c prev slick-prev' style='width:60px' src='src/assets/images/icon/atras.svg'>",
+				"<img class='a-left control-c prev slick-prev' style='width:60px; position:absolute; top:35%; left:-10px' src='src/assets/images/icon/atras.svg'>",
 			nextArrow:
-				"<img class='a-right control-c next slick-next' style='width:60px' src='src/assets/images/icon/next.svg'>",
+				"<img class='a-right control-c next slick-next' style='width:60px; position:absolute; top:35%; right:-10px' src='src/assets/images/icon/next.svg'>",
 			slidesToShow: 2,
 			slidesToScroll: 1,
 			autoplay: true,
@@ -36,7 +36,6 @@ import Deportivos from "../data/deportivos.json";
 	#sliderPrincipaldeportivos {
 		width: 1664px;
 		align-items: center;
-		display: flex;
 		justify-content: space-around;
 		flex-wrap: nowrap;
 		flex-direction: row;

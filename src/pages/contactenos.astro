@@ -1,18 +1,101 @@
+<script is:inline>
+	
+	$(document).ready(function () {
+		var clickBtnFormulario = document.getElementById("btnFormulario");
+		clickBtnFormulario.addEventListener("click", function (event) {
+			// $.ajax({
+			// 	type: "GET",
+			// 	url: "src/data/contactenos.json",
+			// 	dataType: "json",
+			// }).done((data) => {
+			// 	const contactenos = data;
+			// 	console.log(data)
+				var objeto = {
+					nombre: "",
+					apellidos: "",
+					numeroCel: 0,
+					correo: "",
+				};
+				objeto.nombre = document.getElementById("nombre").value;
+				objeto.apellidos = document.getElementById("apellidos").value;
+				objeto.numeroCel = document.getElementById("numeroCel").value;
+				objeto.correo = document.getElementById("correo").value;
+				var validaciones = 0;
+				if (objeto.nombre == "") {
+					document
+						.getElementById("nombre")
+						.setAttribute("style", "background:#ff000098");
+				} else {
+					document
+						.getElementById("nombre")
+						.setAttribute("style", "background:white");
+					validaciones += 1;
+				}
+
+				if (objeto.apellidos == "") {
+					document
+						.getElementById("apellidos")
+						.setAttribute("style", "background:#ff000098");
+				} else {
+					document
+						.getElementById("apellidos")
+						.setAttribute("style", "background:white");
+					validaciones += 1;
+				}
+
+				if (objeto.numeroCel == "") {
+					document
+						.getElementById("numeroCel")
+						.setAttribute("style", "background:#ff000098");
+				} else {
+					validaciones += 1;
+					document
+						.getElementById("numeroCel")
+						.setAttribute("style", "background:white");
+				}
+
+				if (/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(objeto.correo)) {
+					validaciones += 1;
+					document
+						.getElementById("correo")
+						.setAttribute("style", "background:white");
+				} else {
+					document
+						.getElementById("correo")
+						.setAttribute("style", "background:#ff000098");
+				}
+				if (validaciones == 4) {
+					// contactenos.append(objeto)
+					// console.log(contactenos)
+					console.log(objeto)
+					$.ajax({
+					data: {id:23},
+					type: "GET",
+					dataType: "jsonp",
+					url: "src/data/contactenos.json",
+					}).done((eve)=>{
+						console.log(eve)
+					})
+				} else {
+					alert("Datos en rojo no insertados o están mal insertados.")
+				}
+			// });
+		});
+	});
+</script>
+
 <div id="contactenosContent">
 	<h1>Contáctenos</h1>
-	<form
-		action="registro.php"
-		method="post"
-		class="form-register"
-		onsubmit="return validar();"
-	>
+	<form class="form-register">
 		<div class="contenedor-inputs">
 			<input
 				type="text"
 				id="nombre"
 				name="nombre"
+				value=""
 				placeholder="Ingrese sus nombres"
 				class="input-48"
+				required
 			/>
 
 			<input
@@ -21,6 +104,16 @@
 				name="apellidos"
 				placeholder="Ingrese sus apellidos"
 				class="input-48"
+				required
+			/>
+
+			<input
+				type="number"
+				id="numeroCel"
+				name="numeroCel"
+				placeholder="Ingrese su numero de celular"
+				class="input-100"
+				required
 			/>
 
 			<input
@@ -29,9 +122,15 @@
 				name="correo"
 				placeholder="Ingrese su correo"
 				class="input-100"
+				required
 			/>
 
-			<input type="submit" value="Enviar" class="btn-enviar" />
+			<input
+				id="btnFormulario"
+				type="button"
+				value="Enviar"
+				class="btn-enviar"
+			/>
 		</div>
 	</form>
 </div>
@@ -45,7 +144,6 @@
 	* {
 		box-sizing: border-box;
 	}
-
 	#contactenosContent h1 {
 		color: rgb(92, 88, 88);
 		text-align: center;
@@ -59,7 +157,9 @@
 		background: white;
 		border-radius: 10px;
 	}
-
+	.p {
+		color: #ff000098;
+	}
 	.form__titulo {
 		background: deepskyblue;
 		color: #fff;
