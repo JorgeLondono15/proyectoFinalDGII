@@ -5,7 +5,8 @@
         "descripcion" : "Complementa tu nutrición con el Batido Nutricional Fórmula 1 sabor a Cookies & Cream de Herbalife Nutrition, ideal para obtener nutrientes esenciales de una manera práctica, rápida y sencilla.",
         "imagen" : "src/assets/images/F1-Cookies-and-Cream.png",
         "imageninterna" : "src/assets/images/F1-Cookies-and-CreamInterna.png",
-        "precio" : "60.000"
+        "precio" : "132.000$",
+        "preciodesc" : "84.000$"
 
     },
     {
@@ -14,7 +15,8 @@
         "descripcion" : "N-R-G es una mezcla en polvo para preparar una bebida energizante con té negro (naranja pekoe). y extractos de semillas de guaraná, fuentes de cafeína natural.Conoce más del producto: Utilizar la pieza aprobada por el INVIMA sin realizar ninguna modificación al diseño o contenido.",
         "imagen" : "src/assets/images/NRG-Tropical-CO.png",
         "imageninterna" : "src/assets/images/NRG-Tropical-COInterna.png",
-        "precio" : "90.000"
+        "precio" : "79.000$",
+        "preciodesc" : "50.000$"
     },
     {
         "nombre": "Crocante proteína",
@@ -22,7 +24,8 @@
         "descripcion" : "Crocante de Proteína Trocitos crocantes de proteína aislada de soya con cacao. Es un alimento a base de proteína aislada de soya con cacao, delicioso y crujiente,con sabor a chocolate.",
         "imagen" : "src/assets/images/ProteinCrunch.png",
         "imageninterna" : "src/assets/images/ProteinCrunchInterna.png",
-        "precio" : "67.000"
+        "precio" : "133.000$",
+        "preciodesc" : "91.000$"
     },
     {
         "nombre": "BN café latte",
@@ -30,14 +33,16 @@
         "descripcion" : "Complementa tu nutrición con el Batido Nutricional Fórmula 1 sabor a Café Latte de Herbalife Nutrition, ideal para obtener nutrientes esenciales de una manera práctica, rápida y sencilla.",
         "imagen" : "src/assets/images/F1Cafe-Latte.png",
         "imageninterna" : "src/assets/images/F1Cafe-LatteInterna.png",
-        "precio" : "40.000"
+        "precio" : "132.000$",
+        "preciodesc" : "84.000$"
     },{
         "nombre": "BN Cookies",
         "caracteristicas" : "Aporta proteína de alta calidad, principalmente del aislado de proteína de soya90 Calorías por porción preparado con agua y 170 Calorías preparado en leche descremada Vitaminas y minerales Buena fuente de fibra Libre de colesterol y grasas trans (preparado con agua) Alimento que ayuda a nutrir tu cuerpo.",
         "descripcion" : "Complementa tu nutrición con el Batido Nutricional Fórmula 1 sabor a Cookies & Cream de Herbalife Nutrition, ideal para obtener nutrientes esenciales de una manera práctica, rápida y sencilla.",
         "imagen" : "src/assets/images/F1-Cookies-and-Cream.png",
         "imageninterna" : "src/assets/images/F1-Cookies-and-CreamInterna.png",
-        "precio" : "120.000"
+        "precio" : "132.000$",
+        "preciodesc" : "84.000$"
 
     },
     {
@@ -46,7 +51,8 @@
         "descripcion" : "N-R-G es una mezcla en polvo para preparar una bebida energizante con té negro (naranja pekoe) y extractos de semillas de guaraná, fuentes de cafeína natural.Conoce más del producto: Utilizar la pieza aprobada por el INVIMA sin realizar ninguna modificación al diseño o contenido.",
         "imagen" : "src/assets/images/NRG-Tropical-CO.png",
         "imageninterna" : "src/assets/images/NRG-Tropical-COInterna.png",
-        "precio" : "55.000"
+        "precio" : "79.000$",
+        "preciodesc" : "50.000$"
     },
     {
         "nombre": "Crocante proteína",
@@ -54,7 +60,8 @@
         "descripcion" : "Crocante de Proteína Trocitos crocantes de proteína aislada de soya con cacao. Es un alimento a base de proteína aislada de soya con cacao, delicioso y crujiente,con sabor a chocolate.",
         "imagen" : "src/assets/images/ProteinCrunch.png",
         "imageninterna" : "src/assets/images/ProteinCrunchInterna.png",
-        "precio" : "80.000"
+        "precio" : "133.000$",
+        "preciodesc" : "84.000$"
     },
     {
         "nombre": "BN café latte",
@@ -62,6 +69,7 @@
         "descripcion" : "Complementa tu nutrición con el Batido Nutricional Fórmula 1 sabor a Café Latte de Herbalife Nutrition, ideal para obtener nutrientes esenciales de una manera práctica, rápida y sencilla.",
         "imagen" : "src/assets/images/F1Cafe-Latte.png",
         "imageninterna" : "src/assets/images/F1Cafe-LatteInterna.png",
-        "precio" : "75.000"
+        "precio" : "132.000$",
+        "preciodesc" : "84.000$"
     }
 ]

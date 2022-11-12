@@ -6,16 +6,18 @@
         "caracteristicas": "Drive es una mezcla en polvo para preparar bebida hidratante a base de glucosa y sacarosa, con vitaminas y minerales.  13 g de carbohidratos por porción. Cuatro fuentes diferentes de carbohidratos. Electrolitos: Sodio, Potasio y Magnesio. Vitaminas del complejo B: B1 (Tiamina)  y B12 (cobalamina).  50 Calorías por porción.  No contiene saborizantes o edulcorantes artificiales.  Sabor Açai - Frutos Rojos",
         "imagen" : "src/assets/images/CR7.png",
         "imageninterna" : "src/assets/images/CR7Interna.png",
-        "precio" : "Aqui va precio"
+        "precio" : "135.000$",
+        "preciodesc" : "88.000$"
     },
     {
-        "nombre": "Rebuild Strength-Chocolate-1000 gr",
+        "nombre": "Rebuild Strength-Chocolate-1000$ gr",
         "descripcion" : "Rebuild Strength de Herbalife Nutrition es un alimento rico en proteínas de leche y suero de leche,  con vitaminas y minerales. Consúmelo en los 30 minutos posteriores a la actividad física.",
         "beneficios": "Rico en vitaminas del complejo B: B1 (tiamina), B5 (ácido pantoténico), B6 (piridoxina).  25 g de proteína por porción.  Alimento en polvo rico en proteínas de leche y suero de leche con vitaminas y minerales.  Aporta glutamina y aminoácidos ramificados*  Aporte de carbohidratos: mezcla de fructosa, maltodextrina y sacarosa (Para promover una absorción rápida y sostenida).  Rico en hierro, calcio y magnesio.  18 g de carbohidratos por porción",
         "caracteristicas": "Drive es una mezcla en polvo para preparar bebida hidratante a base de glucosa y sacarosa, con vitaminas y minerales.  13 g de carbohidratos por porción. Cuatro fuentes diferentes de carbohidratos. Electrolitos: Sodio, Potasio y Magnesio. Vitaminas del complejo B: B1 (Tiamina)  y B12 (cobalamina).  50 Calorías por porción.  No contiene saborizantes o edulcorantes artificiales.  Sabor Açai - Frutos Rojos",
         "imagen" : "src/assets/images/REBUILD.png",
         "imageninterna" : "src/assets/images/REBUILDInterna.png",
-        "precio" : "Aqui va precio"
+        "precio" : "227.000$",
+        "preciodesc" : "199.000$"
     },
     {
         "nombre": "Drive CR7-Frutos Rojos-810 gr",
@@ -24,15 +26,17 @@
         "caracteristicas": "Drive es una mezcla en polvo para preparar bebida hidratante a base de glucosa y sacarosa, con vitaminas y minerales.  13 g de carbohidratos por porción. Cuatro fuentes diferentes de carbohidratos. Electrolitos: Sodio, Potasio y Magnesio. Vitaminas del complejo B: B1 (Tiamina)  y B12 (cobalamina).  50 Calorías por porción.  No contiene saborizantes o edulcorantes artificiales.  Sabor Açai - Frutos Rojos",
         "imagen" : "src/assets/images/CR7.png",
         "imageninterna" : "src/assets/images/CR7Interna.png",
-        "precio" : "Aqui va precio"
+        "precio" : "135.000$",
+        "preciodesc" : "88.000$"
     },
     {
-        "nombre": "Rebuild Strength-Chocolate-1000 gr",
+        "nombre": "Rebuild Strength-Chocolate-1000$ gr",
         "descripcion" : "Rebuild Strength de Herbalife Nutrition es un alimento rico en proteínas de leche y suero de leche,  con vitaminas y minerales. Consúmelo en los 30 minutos posteriores a la actividad física.",
         "beneficios": "Rico en vitaminas del complejo B: B1 (tiamina), B5 (ácido pantoténico), B6 (piridoxina).  25 g de proteína por porción.  Alimento en polvo rico en proteínas de leche y suero de leche con vitaminas y minerales.  Aporta glutamina y aminoácidos ramificados*  Aporte de carbohidratos: mezcla de fructosa, maltodextrina y sacarosa (Para promover una absorción rápida y sostenida).  Rico en hierro, calcio y magnesio.  18 g de carbohidratos por porción",
         "caracteristicas": "Drive es una mezcla en polvo para preparar bebida hidratante a base de glucosa y sacarosa, con vitaminas y minerales.  13 g de carbohidratos por porción. Cuatro fuentes diferentes de carbohidratos. Electrolitos: Sodio, Potasio y Magnesio. Vitaminas del complejo B: B1 (Tiamina)  y B12 (cobalamina).  50 Calorías por porción.  No contiene saborizantes o edulcorantes artificiales.  Sabor Açai - Frutos Rojos",
         "imagen" : "src/assets/images/REBUILD.png",
         "imageninterna" : "src/assets/images/REBUILDInterna.png",
-        "precio" : "Aqui va precio"
+        "precio" : "227.000$",
+        "preciodesc" : "199.000$"
     }
 ]
