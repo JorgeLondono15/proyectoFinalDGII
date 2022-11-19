@@ -8,9 +8,9 @@ import Deportivo from "../data/deportivos.json";
         clickdeportivoscontent.addEventListener("click", function (e) {
             $("#deportivosContent").slick({
                 prevArrow:
-                    "<img class='a-left control-c prev slick-prev' style='width:60px; position:absolute; top:35%; left:-10px' src='src/assets/images/icon/atras.svg'>",
+                    "<img class='a-left control-c prev slick-prev' style='width:60px; position:absolute; top:35%; left:-10px; z-index:100' src='src/assets/images/icon/atras.svg'>",
                 nextArrow:
-                    "<img class='a-right control-c next slick-next' style='width:60px; position:absolute; top:35%; right:-10px' src='src/assets/images/icon/next.svg'>",
+                    "<img class='a-right control-c next slick-next' style='width:60px; position:absolute; top:35%; right:-10px; z-index:100' src='src/assets/images/icon/next.svg'>",
                 slidesToShow: 1,
                 fade: true,
             });
@@ -39,7 +39,7 @@ import Deportivo from "../data/deportivos.json";
                         <p class="precio1">
                             <del>{item.precio}</del>
                         </p>
-                        <p class="precio2">{item.precio}</p>
+                        <p class="precio2">{item.preciodesc}</p>
                         <img
                             class="imagenCarrito"
                             src="/src/assets/images/icon/Carrito.png"

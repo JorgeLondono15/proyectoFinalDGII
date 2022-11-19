@@ -1,4 +1,4 @@
-<!-- <body>
+<body>
  <h1>Formulario de registro</h1>
  <form action="./registro.php" method="post" class="form-register" onsubmit="return validar();">
  	<h2 class="form__titulo">Crea una cuenta</h2>
@@ -27,90 +27,75 @@
 
 
 <script is:inline>
-	
 	$(document).ready(function () {
 		var clickBtnFormulario = document.getElementById("btnFormulario");
 		clickBtnFormulario.addEventListener("click", function (event) {
-			// $.ajax({
-			// 	type: "GET",
-			// 	url: "src/data/contactenos.json",
-			// 	dataType: "json",
-			// }).done((data) => {
-			// 	const contactenos = data;
-			// 	console.log(data)
-				var objeto = {
-					nombre: "",
-					apellidos: "",
-					numeroCel: 0,
-					correo: "",
-				};
-				objeto.nombre = document.getElementById("nombre").value;
-				objeto.apellidos = document.getElementById("apellidos").value;
-				objeto.numeroCel = document.getElementById("numeroCel").value;
-				objeto.correo = document.getElementById("correo").value;
-				var validaciones = 0;
-				if (objeto.nombre == "") {
-					document
-						.getElementById("nombre")
-						.setAttribute("style", "background:#ff000098");
-				} else {
-					document
-						.getElementById("nombre")
-						.setAttribute("style", "background:white");
-					validaciones += 1;
-				}
+			var objeto = {
+				nombre: "",
+				apellidos: "",
+				numeroCel: 0,
+				correo: "",
+			};
+			objeto.nombre = document.getElementById("nombre").value;
+			objeto.apellidos = document.getElementById("apellidos").value;
+			objeto.numeroCel = document.getElementById("numeroCel").value;
+			objeto.correo = document.getElementById("correo").value;
+			var validaciones = 0;
+			if (objeto.nombre == "") {
+				document
+					.getElementById("nombre")
+					.setAttribute("style", "background:#ff000098");
+			} else {
+				document
+					.getElementById("nombre")
+					.setAttribute("style", "background:white");
+				validaciones += 1;
+			}
 
-				if (objeto.apellidos == "") {
-					document
-						.getElementById("apellidos")
-						.setAttribute("style", "background:#ff000098");
-				} else {
-					document
-						.getElementById("apellidos")
-						.setAttribute("style", "background:white");
-					validaciones += 1;
-				}
+			if (objeto.apellidos == "") {
+				document
+					.getElementById("apellidos")
+					.setAttribute("style", "background:#ff000098");
+			} else {
+				document
+					.getElementById("apellidos")
+					.setAttribute("style", "background:white");
+				validaciones += 1;
+			}
 
-				if (objeto.numeroCel == "") {
-					document
-						.getElementById("numeroCel")
-						.setAttribute("style", "background:#ff000098");
-				} else {
-					validaciones += 1;
-					document
-						.getElementById("numeroCel")
-						.setAttribute("style", "background:white");
-				}
+			if (objeto.numeroCel == "") {
+				document
+					.getElementById("numeroCel")
+					.setAttribute("style", "background:#ff000098");
+			} else {
+				validaciones += 1;
+				document
+					.getElementById("numeroCel")
+					.setAttribute("style", "background:white");
+			}
 
-				if (/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(objeto.correo)) {
-					validaciones += 1;
-					document
-						.getElementById("correo")
-						.setAttribute("style", "background:white");
-				} else {
-					document
-						.getElementById("correo")
-						.setAttribute("style", "background:#ff000098");
-				}
-				if (validaciones == 4) {
-					// contactenos.append(objeto)
-					// console.log(contactenos)
-					console.log(objeto)
-					$.ajax({
-					data: {id:23},
-					type: "GET",
-					dataType: "jsonp",
-					url: "src/data/contactenos.json",
-					}).done((eve)=>{
-						console.log(eve)
-					})
-				} else {
-					alert("Datos en rojo no insertados o están mal insertados.")
-				}
-			// });
+			if (
+				/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(
+					objeto.correo
+				)
+			) {
+				validaciones += 1;
+				document
+					.getElementById("correo")
+					.setAttribute("style", "background:white");
+			} else {
+				document
+					.getElementById("correo")
+					.setAttribute("style", "background:#ff000098");
+			}
+			if (validaciones == 4) {
+				alert("Datos Guardados correctamente");
+			} else {
+				alert("Datos en rojo no insertados o están mal insertados.");
+			}
 		});
 	});
-</script> 
+</script>
 
 <div id="contactenosContent">
 	<h1>Contáctenos</h1>
@@ -164,7 +149,7 @@
 			/>
 		</div>
 	</form>
-</div>  -->
+</div> 
 
 <style>
 	#contactenosContent {
